@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pet Salon Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar stuff -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="featured.html">Featured Pets</a>
+            <a class="nav-link" href="services.html">Services</a>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of Navbar -->
+    <!-- Jumbotron -->
+    <div class="rounded-lg bg-info text-black">
+      <div class="container text-sm-center pt-5">
+        <h1 class="display-2">Pets 'R' Us!</h1>
+        <p class="lead">Pets are family too!!</p>
+        <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#register"
+          >
+            Request a Consultation
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+    <div class="container pt-4">
+      <!-- this is the three col section -->
+      <div class="row">
+        <div class="col-lg order-lg-2">
+          <h3 class="mb-4">We are Pets R Us!</h3>
+          <img
+            class="mb-4 img-fluid rounded d-none d-sm-block"
+            src="/img/about.webp"
+            alt="about-us"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eum
+            adipisci rerum animi quibusdam fugiat aliquam numquam, repellat vel
+            facilis laboriosam, totam voluptates unde consequatur, tempore et
+            sapiente quos voluptate.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eum
+            adipisci rerum animi quibusdam fugiat aliquam numquam, repellat vel
+            facilis laboriosam, totam voluptates unde consequatur, tempore et
+            sapiente quos voluptate.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eum
+            adipisci rerum animi quibusdam fugiat aliquam numquam, repellat vel
+            facilis laboriosam, totam voluptates unde consequatur, tempore et
+            sapiente quos voluptate.
+          </p>
+        </div>
+        <div class="col-lg order-lg-1">
+          <h3 class="mb-4">Expert Staff!</h3>
+          <img src="" />
+          <p>Our expert Staff can help you decide on products and services.</p>
+          <p>We have years of experience and a passion for sharing it.</p>
+          <p>
+            Pets R Us! is committed to being inclusive and welcoming for
+            everyone. We look forward to your visit for a day of learning or to
+            provide you with expert care and service.
+          </p>
+        </div>
+        <div class="col-lg order-lg-3">
+          <h3 class="mb-4">Some of Our Services.</h3>
+          <img src="" />
+          <ul>
+            <li><strong>Foods</strong>: Even for Exotics!</li>
+            <li><strong>Care items</strong></li>
+            <li><strong>Comfort items</strong></li>
+            <li><strong>Habitats</strong></li>
+            <li><strong>Pet Clothing</strong></li>
+            <li><strong>Grooming Services</strong></li>
+          </ul>
+        </div>
+      </div>
+      <!--/three col -->
+
+      <!-- signup form -->
+      <hr />
+      <div class="row py-4 text-muted">
+        <div class="col-md xol-xl-5 ml-auto">
+          <p><strong>About Pets R Us</strong></p>
+          <p>
+            We have a monthly blog and podcast. Sign-up to stay in the know!
+          </p>
+        </div>
+        <div class="col-md col-xl-5">
+          <p><strong>Stay up-to-date with us!</strong></p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email" />
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button">Sign up</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- /signup form -->
+    </div>
+    <!-- /.container -->
+    <!-- footer -->
+    <div class="row py-3">
+      <div class="col-md-7">
+        <ul class="nav">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="https://www.talkandstuff.com/forum"
+              >Community</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Local Shelters</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md text-md-right">
+        <small>&copy; 2022 Pets R US! </small>
+      </div>
+    </div>
+    <!-- /footer -->
+
+    <!-- registration Modal -->
+
+    <div
+      class="modal fade"
+      id="register"
+      tabindex="-1"
+      aria-labelledby="register form"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="">
+              What are your Pet's needs?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- form -->
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text">Name</span>
+              <input type="text" class="form-control" id="txtName" />
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text">Age</span>
+              <input type="number" class="form-control" id="txtAge" />
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text">Pet type</span>
+              <input type="text" class="form-control" id="txtType" />
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text">Gender</span>
+              <input type="text" class="form-control" id="txtGender" />
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text">Breed</span>
+              <input type="text" class="form-control" id="txtBreed" />
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text">Temperament</span>
+              <input type="text" class="form-control" id="txtTemp" />
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text">Service</span>
+              <select class="form-control" id="txtService">
+                <option value="Grooming">Grooming</option>
+                <option value="Nails">Nails</option>
+                <option value="Check-up">Check-up</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" onclick="register()">Register</button>
+      </div>
+            <!-- /form -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /modal -->
+    <!-- Look at all this BOOTSTRAP voodoo  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!--/Bootstrap Voodoo-->
+    <script src="/js/register.js"></script>
+  </body>
+</html>
