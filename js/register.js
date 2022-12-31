@@ -64,12 +64,12 @@ function clearForm() {
 }
 
 
-function init() {
-    let Jake = new Pet('Jake', 'dog', '13', 'male', 'lab', 'calm', 'nails');
-    let Ivy = new Pet('Ivy', 'dog', '3', 'female', 'mix', 'hyper', 'grooming');
-    let Penny = new Pet('Penny', 'dog', '10', 'female', 'Australian Cattle', 'loving', 'check-up');
-    PetsRus.pets.push(Jake, Ivy, Penny);
+// // function init() {
+// //     let Jake = new Pet('Jake', 'dog', '13', 'male', 'lab', 'calm', 'nails');
+// //     let Ivy = new Pet('Ivy', 'dog', '3', 'female', 'mix', 'hyper', 'grooming');
+// //     let Penny = new Pet('Penny', 'dog', '10', 'female', 'Australian Cattle', 'loving', 'check-up');
+// //     PetsRus.pets.push(Jake, Ivy, Penny);
 
 
-}
+// }
 window.onload = init;
