@@ -22,7 +22,9 @@ let PetsRus = {
 }
 
 
-function Pet(name, age, type, gender, breed, temperament, service) {
+function Pet(ownerName, ownerEmail, name, age, type, gender, breed, temperament, service) {
+    this.ownerName = ownerName;
+    this.ownerEmail = ownerEmail;
     this.name = name;
     this.age = age;
     this.type = type;
@@ -32,7 +34,8 @@ function Pet(name, age, type, gender, breed, temperament, service) {
     this.service = service;
 
 }
-
+let inputOname = document.getElementById('txtOname');
+let inputEmail = document.getElementById('txtEmail');
 let inputName = document.getElementById('txtName');
 let inputAge = document.getElementById('txtAge');
 let inputType = document.getElementById('txtType');
@@ -43,9 +46,9 @@ let inputService = document.getElementById('txtService');
 
 // register pet from HTML form
 function register() {
-    console.log(inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
+    console.log(inputOname.value, inputEmail.value, inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
 
-    let newPet = new Pet(inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
+    let newPet = new Pet(inputOname.value, inputEmail.value, inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
 
     PetsRus.pets.push(newPet);
     console.log(newPet);
@@ -53,6 +56,8 @@ function register() {
     clearForm();
 }
 function clearForm() {
+    inputOname.value = '';
+    inputEmail.value = '';
     inputName.value = "";
     inputAge.value = "";
     inputType.value = "";
@@ -65,9 +70,9 @@ function clearForm() {
 
 
 function init() {
-    let Jake = new Pet('Jake', 'dog', '13', 'male', 'lab', 'calm', 'nails');
-    let Ivy = new Pet('Ivy', 'dog', '3', 'female', 'mix', 'hyper', 'grooming');
-    let Penny = new Pet('Penny', 'dog', '10', 'female', 'Australian Cattle', 'loving', 'check-up');
+    let Jake = new Pet('guy', 'some@here.com', 'Jake', 'dog', '13', 'male', 'lab', 'calm', 'nails');
+    let Ivy = new Pet('guy', 'some@here.com', 'Ivy', 'dog', '3', 'female', 'mix', 'hyper', 'grooming');
+    let Penny = new Pet('guy', 'some@here.com', 'Penny', 'dog', '10', 'female', 'Australian Cattle', 'loving', 'check-up');
     PetsRus.pets.push(Jake, Ivy, Penny);
 
 
