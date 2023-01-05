@@ -37,7 +37,7 @@
       </div>
     </nav>
     <!-- end of Navbar -->
-    <!-- Jumbotron -->
+    <!-- large head section -->
     <div class="rounded-lg bg-info text-black">
       <div class="container text-sm-center pt-5">
         <h1 class="display-2">Pets 'R' Us!</h1>
@@ -54,9 +54,9 @@
         </div>
       </div>
     </div>
-    <!-- Jumbotron -->
+    <!-- /large head section-->
     <div class="container pt-4">
-      <!-- this is the three col section -->
+      <!-- this is the three flex col section -->
       <div class="row">
         <div class="col-lg order-lg-2">
           <h3 class="mb-4">We are Pets R Us!</h3>
@@ -110,7 +110,7 @@
       </div>
       <!--/three col -->
 
-      <!-- signup form -->
+      <!-- signup footer -->
       <hr />
       <div class="row py-4 text-muted">
         <div class="col-md xol-xl-5 ml-auto">
@@ -130,7 +130,7 @@
         </div>
       </div>
       <hr class="border border-primary border-3 opacity-75" />
-      <!-- /signup form -->
+      <!-- /signup footer -->
     </div>
     <!-- /.container -->
     <!-- footer -->
@@ -149,7 +149,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Local Shelters</a>
+            <a class="nav-link" href="https://bestfriends.org/" target="_blank">Local Shelters</a>
           </li>
         </ul>
       </div>
@@ -160,6 +160,9 @@
     <!-- /footer -->
 
     <!-- registration Modal -->
+
+    <!-- I user a bootstrap modal and placed the reristration form inside 
+      it rather than have a seperate registration page -->
 
     <div
       class="modal fade"
@@ -180,7 +183,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <!-- form -->
+            <!--  input fields form -->
             <div class="input-group input-group-sm mb-3">
               <span class="input-group-text">Owner name</span>
               <input type="text" class="form-control" id="txtOname" />
@@ -235,18 +238,20 @@
                   <option value="Nails">Nails</option>
                   <option value="Check-up">Check-up</option>
                 </select>
+                <!-- JS for form -->
               </div>
               <button class="btn btn-primary" onclick="register()">
                 Register
               </button>
             </div>
-            <!-- /form -->
-          </div>
+            <!--  / js for form -->
+            
+          </div><!-- /form -->
         </div>
       </div>
-    </div>
+    </div><!-- /modal -->
 
-    <!-- /modal -->
+    
     <!-- Look at all this BOOTSTRAP voodoo  -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -259,6 +264,9 @@
       crossorigin="anonymous"
     ></script>
     <!--/Bootstrap Voodoo-->
+     <!-- My js -->
     <script src="/js/register.js"></script>
+    <!-- /js -->
+
   </body>
 </html>
