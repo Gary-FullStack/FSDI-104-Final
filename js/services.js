@@ -9,8 +9,9 @@ function displayPetCards() {
 
         card += `
             <div id="${pet.id}" class = "petCard">
-            <h4>Owner: ${pet.Oname}</h4>
-            <h4>Email: ${pet.Email}</h4>
+            <h4>Owner: ${pet.ownerName}</h4>
+            <h4>Email: ${pet.eMail}</h4>
+            <h4>Phone: ${pet.phone}</h4>
             <h4>Name: ${pet.name}</h4>
             <p> Age: ${pet.age}</p>
             <p> Type: ${pet.type}</p>
@@ -25,6 +26,12 @@ function displayPetCards() {
     }
 
     petSection.innerHTML = card;
+
+}
+
+function displayInfo() {
+
+    document.getElementById("info").innerHTML = "you have " + PetsRus.pets.length + " pets registered.";
 }
 
 

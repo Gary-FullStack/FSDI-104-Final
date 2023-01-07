@@ -21,10 +21,11 @@ let PetsRus = {
     pets: []
 }
 
-
-function Pet(ownerName, ownerEmail, name, age, type, gender, breed, temperament, service) {
-    this.ownerName = ownerName;
-    this.ownerEmail = ownerEmail;
+let c = 0;
+function Pet(owner, ownereMail, phone, name, age, type, gender, breed, temperament, service) {
+    this.ownerName = owner;
+    this.ownereMail = ownereMail;
+    this.phone = phone;
     this.name = name;
     this.age = age;
     this.type = type;
@@ -32,10 +33,12 @@ function Pet(ownerName, ownerEmail, name, age, type, gender, breed, temperament,
     this.breed = breed;
     this.temperament = temperament;
     this.service = service;
+    this.id = c++;
 
 }
-let inputOname = document.getElementById('txtOname');
-let inputEmail = document.getElementById('txtEmail');
+let inputownerName = document.getElementById('txtOname');
+let inputeMail = document.getElementById('txtEmail');
+let inputPhone = document.getElementById('txtPhone');
 let inputName = document.getElementById('txtName');
 let inputAge = document.getElementById('txtAge');
 let inputType = document.getElementById('txtType');
@@ -44,20 +47,92 @@ let inputBreed = document.getElementById('txtBreed');
 let inputTemperament = document.getElementById('txtTemp');
 let inputService = document.getElementById('txtService');
 
-// register pet from HTML form
+
+function validatePet(thePet) {
+    let validation = true;
+    inputName.classList.remove('alert-error');
+    inputService.classList.remove('alert-error');
+    inputGender.classList.remove('alert-error');
+    inputBreed.classList.remove('alert-error');
+    inputAge.classList.remove('alert-error');
+    inputTemperament.classList.remove('alert-error');
+    inputType.classList.remove('alert-error');
+    inputownerName.classList.remove('alert-error');
+    inputeMail.classList.remove('alert-error');
+    inputPhone.classList.remove('alert-error');
+
+    if (thePet.name == "") {
+        validation = false;
+        inputName.classList.add("alert-error");
+    }
+
+    if (thePet.service == "") {
+        validation = false;
+        inputService.classList.add("alert-error");
+    }
+
+    if (thePet.gender == "") {
+        validation = false;
+        inputGender.classList.add("alert-error");
+    }
+
+    if (thePet.breed == "") {
+        validation = false;
+        inputBreed.classList.add("alert-error");
+    }
+
+    if (thePet.type == "") {
+        validation = false;
+        inputType.classList.add("alert-error");
+    }
+
+    if (thePet.temperament == "") {
+        validation = false;
+        inputTemperament.classList.add("alert-error");
+    }
+
+    if (thePet.age == "") {
+        validation = false;
+        inputAge.classList.add("alert-error");
+    }
+
+    if (thePet.eMail == "") {
+        validation = false;
+        inputeMail.classList.add("alert-error");
+    }
+
+    if (thePet.ownerName == "") {
+        validation = false;
+        inputownerName.classList.add("alert-error");
+    }
+
+    if (thePet.phone == "") {
+        validation = false;
+        inputPhone.classList.add("alert-error");
+    }
+
+    return validation;
+
+}
+
+
 function register() {
-    console.log(inputOname.value, inputEmail.value, inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
+    console.log(inputownerName.value, inputeMail.value, inputPhone.value, inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
 
-    let newPet = new Pet(inputOname.value, inputEmail.value, inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
-
-    PetsRus.pets.push(newPet);
-    console.log(newPet);
-    console.log(PetsRus.pets);
-    clearForm();
+    let newPet = new Pet(inputownerName.value, inputeMail.value, inputPhone.value, inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
+    if (validatePet(newPet) == true) {
+        PetsRus.pets.push(newPet);
+        console.log(newPet);
+        console.log(PetsRus.pets);
+        clearForm();
+    } else {
+        alert("Please correct the form and try again");
+    }
 }
 function clearForm() {
-    inputOname.value = '';
-    inputEmail.value = '';
+    inputownerName.value = '';
+    inputeMail.value = '';
+    inputPhone.value = "";
     inputName.value = "";
     inputAge.value = "";
     inputType.value = "";
@@ -66,6 +141,25 @@ function clearForm() {
     inputTemperament.value = "";
     inputService.value = "";
 
+}
+
+function deletePet(id) {
+    let deleteIndex;
+    for (let i = 0; i < PetsRus.pets.length; i++) {
+        let pet = PetsRus.pets[i];
+        if (id == pet.id) {
+            deleteIndex = i;
+        }
+    }
+
+    document.getElementById(id).remove();
+    PetsRus.pets.splice(deleteIndex, 1);
+    displayInfo();
+}
+
+function displayInfo() {
+
+    document.getElementById("info").innerHTML = "you have " + PetsRus.pets.length + " pets registered.";
 }
 
 

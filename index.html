@@ -32,6 +32,7 @@
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="featured.html">Featured Pets</a>
             <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="registration.html">Registration</a>
           </div>
         </div>
       </div>
@@ -186,12 +187,17 @@
             <!--  input fields form -->
             <div class="input-group input-group-sm mb-3">
               <span class="input-group-text">Owner name</span>
-              <input type="text" class="form-control" id="txtOname" />
+              <input type="text" class="form-control" id="txtownerName" />
             </div>
 
             <div class="input-group input-group-sm mb-3">
               <span class="input-group-text">Email</span>
-              <input type="text" class="form-control" id="txtEmail" />
+              <input type="text" class="form-control" id="txteMail" />
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text">Phone</span>
+              <input type="text" class="form-control" id="txtPhone" />
             </div>
 
             <hr class="border border-primary border-3 opacity-75 mb-5" >
@@ -233,6 +239,7 @@
               <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text">Service</span>
                 <select class="form-control" id="txtService">
+                  <option value=""disabled selected>--Choose an Option--</option>
                   <option value="Grooming">Training</option>
                   <option value="Grooming">Grooming</option>
                   <option value="Nails">Nails</option>
@@ -265,6 +272,7 @@
     ></script>
     <!--/Bootstrap Voodoo-->
      <!-- My js -->
+     <script src="services.html"></script>
     <script src="/js/register.js"></script>
     <!-- /js -->
 

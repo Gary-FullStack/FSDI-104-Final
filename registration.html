@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Salon Project</title>
+  </head>
+  <body>
+    
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Owner name</span>
+      <input type="text" class="form-control" id="txtownerName" />
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Email</span>
+      <input type="text" class="form-control" id="txteMail" />
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Phone</span>
+      <input type="text" class="form-control" id="txtPhone" />
+    </div>
+
+    <hr class="border border-primary border-3 opacity-75 mb-5" >
+
+    <div class="alert alert-success" role="alert">
+      Enter your pet info here.
+    </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">Pet Name</span>
+        <input type="text" class="form-control" id="txtName" />
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">Age</span>
+        <input type="number" class="form-control" id="txtAge" />
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">Pet type</span>
+        <input type="text" class="form-control" id="txtType" />
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">Gender</span>
+        <input type="text" class="form-control" id="txtGender" />
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">Breed</span>
+        <input type="text" class="form-control" id="txtBreed" />
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">Temperament</span>
+        <input type="text" class="form-control" id="txtTemp" />
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">Service</span>
+        <select class="form-control" id="txtService">
+          <option value=""disabled selected>--Choose an Option--</option>
+          <option value="Grooming">Training</option>
+          <option value="Grooming">Grooming</option>
+          <option value="Nails">Nails</option>
+          <option value="Check-up">Check-up</option>
+        </select>
+        <!-- JS for form -->
+      </div>
+      <button class="btn btn-primary" onclick="register()">
+        Register
+      </button>
+    </div>
+  </body>
+</html>
