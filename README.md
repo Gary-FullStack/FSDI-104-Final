@@ -2,4 +2,6 @@
 pet salon project
 
 
-A lot of BOOTSTRAP here.   
+Had an error, tried to fix it, it got worse.  Console log looked like a roaring fireplace of red. :(
+
+
