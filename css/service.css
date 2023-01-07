@@ -20,3 +20,26 @@ select {
 .error {
   border: 1px solid red;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+thead {
+  color: green;
+}
+tbody {
+  color: blue;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.alert-error {
+  border: 1px solid red;
+}

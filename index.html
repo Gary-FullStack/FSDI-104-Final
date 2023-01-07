@@ -10,7 +10,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href=css/custom-style.css>
+    <link rel="stylesheet" href=css/service.css>
   </head>
   <body>
     <!-- Navbar stuff -->
@@ -32,7 +32,7 @@
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="featured.html">Featured Pets</a>
             <a class="nav-link" href="services.html">Services</a>
-            <a class="nav-link" href="register.html">Registration</a>
+            <a class="nav-link" href="register.html">Register</a>
           </div>
         </div>
       </div>
@@ -43,16 +43,6 @@
       <div class="container text-sm-center pt-5">
         <h1 class="display-2">Pets 'R' Us!</h1>
         <p class="lead">Pets are family too!!</p>
-        <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-          <button
-            type="button"
-            class="btn btn-primary btn-lg"
-            data-bs-toggle="modal"
-            data-bs-target="#register"
-          >
-            Request a Consultation
-          </button>
-        </div>
       </div>
     </div>
     <!-- /large head section-->
@@ -150,7 +140,9 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="https://bestfriends.org/" target="_blank">Local Shelters</a>
+            <a class="nav-link" href="https://bestfriends.org/" target="_blank"
+              >Local Shelters</a
+            >
           </li>
         </ul>
       </div>
@@ -160,105 +152,6 @@
     </div>
     <!-- /footer -->
 
-    <!-- registration Modal -->
-
-    <!-- I user a bootstrap modal and placed the reristration form inside 
-      it rather than have a seperate registration page -->
-
-    <div
-      class="modal fade"
-      id="register"
-      tabindex="-1"
-      aria-labelledby="register form"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header bg-info text-black">
-            <h1 class="modal-title fs-5" id="">Request Service form.</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!--  input fields form -->
-            <div class="input-group input-group-sm mb-3">
-              <span class="input-group-text">Owner name</span>
-              <input type="text" class="form-control" id="txtownerName" />
-            </div>
-
-            <div class="input-group input-group-sm mb-3">
-              <span class="input-group-text">Email</span>
-              <input type="text" class="form-control" id="txteMail" />
-            </div>
-
-            <div class="input-group input-group-sm mb-3">
-              <span class="input-group-text">Phone</span>
-              <input type="text" class="form-control" id="txtPhone" />
-            </div>
-
-            <hr class="border border-primary border-3 opacity-75 mb-5" >
-
-            <div class="alert alert-success" role="alert">
-              Enter your pet info here.
-            </div>
-
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text">Pet Name</span>
-                <input type="text" class="form-control" id="txtName" />
-              </div>
-
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text">Age</span>
-                <input type="number" class="form-control" id="txtAge" />
-              </div>
-
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text">Pet type</span>
-                <input type="text" class="form-control" id="txtType" />
-              </div>
-
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text">Gender</span>
-                <input type="text" class="form-control" id="txtGender" />
-              </div>
-
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text">Breed</span>
-                <input type="text" class="form-control" id="txtBreed" />
-              </div>
-
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text">Temperament</span>
-                <input type="text" class="form-control" id="txtTemp" />
-              </div>
-
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text">Service</span>
-                <select class="form-control" id="txtService">
-                  <option value=""disabled selected>--Choose an Option--</option>
-                  <option value="Grooming">Training</option>
-                  <option value="Grooming">Grooming</option>
-                  <option value="Nails">Nails</option>
-                  <option value="Check-up">Check-up</option>
-                </select>
-                <!-- JS for form -->
-              </div>
-              <button class="btn btn-primary" onclick="register()">
-                Register
-              </button>
-            </div>
-            <!--  / js for form -->
-            
-          </div><!-- /form -->
-        </div>
-      </div>
-    </div><!-- /modal -->
-
-    
     <!-- Look at all this BOOTSTRAP voodoo  -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -271,10 +164,9 @@
       crossorigin="anonymous"
     ></script>
     <!--/Bootstrap Voodoo-->
-     <!-- My js -->
-     <script src="services.js"></script>
+    <!-- My js -->
+    <script src="/js/services.js"></script>
     <script src="/js/register.js"></script>
     <!-- /js -->
-
   </body>
 </html>

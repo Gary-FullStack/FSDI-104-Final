@@ -131,7 +131,7 @@ function register() {
         console.log(newPet);
         console.log(PetsRus.pets);
         displayInfo();
-        displayPetCards();
+        // displayPetCards();
         clearForm();
     } else {
         alert("Please correct the form and try again");
@@ -165,10 +165,10 @@ function deletePet(id) {
     displayInfo();
 }
 
-function displayInfo() {
+// function displayInfo() {
 
-    document.getElementById("info").innerHTML = "you have " + PetsRus.pets.length + " pets registered.";
-}
+//     document.getElementById("info").innerHTML = "you have " + PetsRus.pets.length + " pets registered.";
+// }
 
 
 function init() {
@@ -176,6 +176,8 @@ function init() {
     let Ivy = new Pet('guy', 'some@here.com', '1234567890', 'Ivy', '3', 'dog', 'female', 'mix', 'hyper', 'grooming');
     let Penny = new Pet('guy', 'some@here.com', '1234567890', 'Penny', '10', 'dog', 'female', 'Australian Cattle', 'loving', 'check-up');
     PetsRus.pets.push(Jake, Ivy, Penny);
+    // displayInfo();
+    displayTable();
 
 
 }
